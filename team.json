@@ -1,0 +1,302 @@
+[
+  {
+    "name" : "PATRICK RØNNING",
+    "email" : "plr@signifly.com",
+    "role": "CONSULTANTS"
+  },
+  {
+    "name" : "Mads Kjærgaard",
+    "email" : "mk@signifly.com",
+    "role": "CONSULTANTS"
+  },
+  {
+    "name" : "Nicklas Rønning",
+    "email" : "nr@signifly.com",
+    "role": "CONSULTANTS"
+  },
+  {
+    "name" : "John Mongeau",
+    "email" : "jm@signifly.com",
+    "role": "CONSULTANTS"
+  },
+  {
+    "name" : "Hans Theisen",
+    "email" : "ht@signifly.com",
+    "role": "CONSULTANTS"
+  },
+  {
+    "name" : "Charlie Cross",
+    "email" : "cc@signifly.com",
+    "role": "CONSULTANTS"
+  },
+  {
+    "name" : "HEDVIG AANESEN",
+    "email" : "ha@signifly.com",
+    "role": "INNOVATION LEADS"
+  },
+  {
+    "name" : "SARA FRIIS BACHE",
+    "email" : "sb@signifly.com",
+    "role": "INNOVATION LEADS"
+  },
+  {
+    "name" : "MATHILDE LUNDGREEN",
+    "email" : "mlu@signifly.com",
+    "role": "INNOVATION LEADS"
+  },
+  {
+    "name" : "MATHILDE IVE",
+    "email" : "mi@signifly.com",
+    "role": "INNOVATION LEADS"
+  },
+  {
+    "name" : "GIJS MILLENAAR",
+    "email" : "gm@signifly.com",
+    "role": "INNOVATION LEADS"
+  },
+  {
+    "name" : "EMIL HØRLYCK",
+    "email" : "eh@signifly.com",
+    "role": "INNOVATION LEADS"
+  },
+  {
+    "name" : "AURELIE SAÏZ",
+    "email" : "asa@signifly.com",
+    "role": "INNOVATION LEADS"
+  },
+  {
+    "name" : "MALTHE MOGENSEN",
+    "email" : "mm@signifly.com",
+    "role": "STRATEGISTS"
+  },
+  {
+    "name" : "MADS LINDUM",
+    "email" : "ml@signifly.com",
+    "role": "STRATEGISTS"
+  },
+  {
+    "name" : "MICHAEL VALENTIN",
+    "email" : "mv@signifly.com",
+    "role": "STRATEGISTS"
+  },
+  {
+    "name" : "GABRIELLE OLIVAS",
+    "email" : "go@signifly.com",
+    "role": "STRATEGISTS"
+  },
+  {
+    "name" : "KATHRINE ELVIRA BOYSEN",
+    "email" : "keb@signifly.com",
+    "role": "STRATEGISTS"
+  },
+  {
+    "name" : "ZIAD SOLIMAN",
+    "email" : "zs@signifly.com",
+    "role": "STRATEGISTS"
+  },
+  {
+    "name" : "THOR TOPHØJ",
+    "email" : "tt@signifly.com",
+    "role": "GROWTH CONSULTANTS"
+  },
+  {
+    "name" : "TOBIAS JØRGENSEN",
+    "email" : "tk@signifly.com",
+    "role": "GROWTH CONSULTANTS"
+  },
+  {
+    "name" : "CHRISTIAN PIND",
+    "email" : "cp@signifly.com",
+    "role": "GROWTH CONSULTANTS"
+  },
+  {
+    "name" : "NADIA WILLUM",
+    "email" : "nw@signifly.com",
+    "role": "GROWTH CONSULTANTS"
+  },
+  {
+    "name" : "ZIAD SOLIMAN",
+    "email" : "zs@signifly.com",
+    "role": "GROWTH CONSULTANTS"
+  },
+  {
+    "name" : "ALEXANDER SPLIID",
+    "email" : "as@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "SØREN SCHRØDER",
+    "email" : "ss@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "ALEXANDRE LEE",
+    "email" : "al@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "TRINE RØNSHOLDT",
+    "email" : "tr@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "MARTIN BALLE",
+    "email" : "mba@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "KRISTOFFER BALZER NIELSEN",
+    "email" : "kbn@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "SASHA NG",
+    "email" : "sng@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "MAHENDRA CANAGUY",
+    "email" : "mnc@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "CAROLINE VESTERGAARD REITER",
+    "email" : "cvr@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "CLÉMENT BARJON",
+    "email" : "cb@signifly.com",
+    "role": "DESIGNERS"
+  },
+  {
+    "name" : "TORE HEIMANN",
+    "email" : "th@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "MORTEN JENSEN",
+    "email" : "mpj@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "RO KLEINE SONNE",
+    "email" : "ro@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "JAJA TRYTOVA",
+    "email" : "ja@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "PHILLIP RAFFNSØE",
+    "email" : "pra@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "MATTHIAS S. LARSEN",
+    "email" : "msl@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "DORA BESIC",
+    "email" : "db@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "CHRISTOFFER SKYTTE WIELSØE",
+    "email" : "csw@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "EWA UTRACKA",
+    "email" : "ewa@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "TOMMY JEPSEN",
+    "email" : "tje@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "ANTONI ANDRÉ",
+    "email" : "aan@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "PEDRO PADRON",
+    "email" : "pp@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "HUGO MIRANDA",
+    "email" : "hm@signifly.com",
+    "role": "TECH"
+  },
+  {
+    "name" : "HELENE TRAN",
+    "email" : null,
+    "role": "TECH"
+  },
+  {
+    "name" : "NANA SKAK",
+    "email" : "ns@signifly.com",
+    "role": "CREATIVES"
+  },
+  {
+    "name" : "NIKOLAJ TRANE",
+    "email" : "ntk@signifly.com",
+    "role": "CREATIVES"
+  },
+  {
+    "name" : "JOACHIM KLINTFÄLT",
+    "email" : "jk@signifly.com",
+    "role": "CREATIVES"
+  },
+  {
+    "name" : "CHRISTIAN WIENBERG",
+    "email" : "cw@signifly.com",
+    "role": "CREATIVES"
+  },
+  {
+    "name" : "ANDERS LINDVED",
+    "email" : "ali@signifly.com",
+    "role": "CREATIVES"
+  },
+  {
+    "name" : "MIKI MIKUCKI",
+    "email" : "mik@signifly.com",
+    "role": "CREATIVES"
+  },
+  {
+    "name" : "LASSE SVANHOLM",
+    "email" : "ls@signifly.com",
+    "role": "ADMINISTRATION"
+  },
+  {
+    "name" : "MICHAEL VALENTIN",
+    "email" : "mv@signifly.com",
+    "role": "ADMINISTRATION"
+  },
+  {
+    "name" : "SARA FRIIS BACHE",
+    "email" : "sb@signifly.com",
+    "role": "ADMINISTRATION"
+  },
+  {
+    "name" : "MARIA OLSEN",
+    "email" : "mo@signifly.com",
+    "role": "ADMINISTRATION"
+  },
+  {
+    "name" : "JOHAN HYGUM HILLERS",
+    "email" : "jh@signifly.com",
+    "role": "ADMINISTRATION"
+  },
+  {
+    "name" : "AMALIE PFLUG",
+    "email" : "ap@signifly.com",
+    "role": "ADMINISTRATION"
+  }
+]
