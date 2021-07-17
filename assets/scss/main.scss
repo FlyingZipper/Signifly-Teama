@@ -1,4 +1,8 @@
 @import './var.scss';
+@import './text.scss';
+@import './transitions.scss';
+
+// Layout
 
 .container{
   max-width: 80rem;
@@ -9,4 +13,12 @@
   & > * {
     width: fit-content;
   }
+}
+
+// Button
+
+button{
+  border: none;
+  background: none;
+  cursor: pointer;
 }
