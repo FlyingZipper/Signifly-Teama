@@ -1,1 +1,12 @@
-@import './var.scss'
+@import './var.scss';
+
+.container{
+  max-width: 80rem;
+}
+
+.center{
+  margin: 0 auto;
+  & > * {
+    width: fit-content;
+  }
+}
