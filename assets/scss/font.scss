@@ -1,0 +1,11 @@
+$title: 'Oswald', sans-serif;
+$text: 'Open Sans', sans-serif;
+
+body{
+  font-family: $text;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $title;
+}
+

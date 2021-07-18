@@ -1,12 +1,12 @@
 <template>
   <div class="input-text">
     <label :for="name" class="label">{{ label }}</label>
-    <input
+    <textarea
       type="text"
       :name="name"
       :value="value"
       @input="$emit('input', $event.target.value)"
-    >
+    />
     <span class="input-border" />
   </div>
 </template>
@@ -42,12 +42,15 @@ export default {
     font-size: 1rem;
     color: $black;
   }
-  & > input {
+  & > textarea,
+  input {
     outline: none;
     border: none;
     padding: 10px 0;
     border-bottom: 1px solid $black;
-    font-size:1rem;
+    font-size: 1rem;
+    resize: vertical;
+    height: 100px;
   }
 }
 

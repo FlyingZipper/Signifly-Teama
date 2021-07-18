@@ -1,19 +1,20 @@
 <template>
-  <div>
-    Dashboard - All Projects
-    <v-text-input v-model="text" name="name" label="wow" />
-    <div>
-      <img src="~assets/svg/signifly.svg" class="" alt="" style="width:100px; height:auto;"> Teams
-    </div>
+  <div class="layout">
+    <div />
+    <v-layout-card-project />
+    <div />
+    <v-button-create />
   </div>
 </template>
 
 <script>
-import TextInput from '~/components/molecules/InputText.vue'
+import ButtonCreate from '~/components/atoms/ButtonCreate.vue'
+import LayoutCardProject from '~/components/template/LayoutCardProject.vue'
 
 export default {
   components: {
-    'v-text-input': TextInput
+    'v-button-create': ButtonCreate,
+    'v-layout-card-project': LayoutCardProject
   },
   data () {
     return {
@@ -24,4 +25,9 @@ export default {
 </script>
 
 <style>
+/* .layout{
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: 10rem auto;
+} */
 </style>

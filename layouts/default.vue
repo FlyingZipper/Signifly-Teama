@@ -13,7 +13,11 @@
 </template>
 
 <script>
+import Navbar from '~/components/organims/Navbar.vue'
 export default {
+  components: {
+    'v-navbar': Navbar
+  }
 
 }
 </script>

@@ -1,47 +1,109 @@
 <template>
-  <div>
-    <div>
-      <v-form-step-selector />
+  <div class="form-create-project">
+    <div class="form-create-project__selector">
+      <v-step-selector v-model="step" icon="face" text="Client" :step="1" />
+      <v-step-selector
+        v-model="step"
+        icon="extension"
+        text="Project"
+        :step="2"
+      />
+      <v-step-selector v-model="step" icon="groups" text="Members" :step="3" />
+      <v-step-selector
+        v-model="step"
+        icon="visibility"
+        text="Overview"
+        :step="4"
+      />
     </div>
-    <div>
-      <div>
-        <v-step-client-info />
-        <v-step-project-info />
-        <v-step-team-member />
-        <v-step-overview />
-      </div>
-      <v-form-button />
+    <div /> <!-- Space holder for selector step component -->
+    <div class="form-create-project__steps">
+      <transition name="slide" mode="out-in">
+        <v-step-client-info
+          v-if="step === 1"
+          v-model="form.client"
+          @nextStep="incrementStep"
+        />
+        <v-step-project-info
+          v-if="step === 2"
+          v-model="form.project"
+          @nextStep="incrementStep"
+        />
+        <v-step-team-member
+          v-if="step === 3"
+          v-model="form.members"
+          @nextStep="incrementStep"
+        />
+        <v-step-overview v-if="step === 4" :form-data="form" @nextStep="save" />
+      </transition>
     </div>
   </div>
 </template>
 
 <script>
-import FormStepSelector from '~/components/organims/FormStepSelector.vue'
+import StepSelector from '~/components/molecules/StepSelector.vue'
 
 import StepClientInfo from '~/components/organims/StepClientInfo.vue'
 import StepProjectInfo from '~/components/organims/StepProjectInfo.vue'
 import StepTeamMember from '~/components/organims/StepTeamMember.vue'
 import StepOverview from '~/components/organims/StepOverview.vue'
 
-import FormButton from '~/components/atoms/FormButton.vue'
-
 export default {
   components: {
-    'v-form-step-selector': FormStepSelector,
+    'v-step-selector': StepSelector,
     'v-step-client-info': StepClientInfo,
     'v-step-project-info': StepProjectInfo,
     'v-step-team-member': StepTeamMember,
-    'v-step-overview': StepOverview,
-    'v-form-button': FormButton
+    'v-step-overview': StepOverview
   },
   data () {
     return {
-      step: 0
+      step: 1,
+      form: {
+        client: {},
+        project: {},
+        members: []
+      }
+    }
+  },
+  methods: {
+    incrementStep () {
+      this.step++
+    },
+    save () {
+      // TODO : save information on firebase storage
+      // console.log(this.data)
+      // on success push route to _slug with the corresponding slug
+      this.$router.push({ path: '/fesfs' })
     }
   }
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.form-create-project {
+  margin: 0 5%;
+  display: grid;
+  grid-template-columns: 20rem auto 20rem;
+  & > .form-create-project__selector {
+    position: fixed;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    & > * {
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  & > .form-create-project__steps {
+    // margin-top: 10rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+}
 </style>
