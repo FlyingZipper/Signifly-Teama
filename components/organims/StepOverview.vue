@@ -31,9 +31,6 @@ export default {
       required: true
     }
   },
-  created () {
-    console.log(this.formData)
-  },
   methods: {
     nextStep () {
       this.$emit('nextStep')

@@ -41,6 +41,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~plugins/db'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -55,8 +56,27 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // https://firebase.nuxtjs.org/
+    '@nuxtjs/firebase'
   ],
+
+  firebase: {
+    config: {
+      apiKey: 'AIzaSyA6UUiit4HOKWfad_C-La9GPUqrBkNnlcY',
+      authDomain: 'signifly-teams.firebaseapp.com',
+      databaseURL: 'https://signifly-teams-default-rtdb.firebaseio.com',
+      projectId: 'signifly-teams',
+      storageBucket: 'signifly-teams.appspot.com',
+      messagingSenderId: '78551624108',
+      appId: '1:78551624108:web:4dbc5b571dec663a427209',
+      measurementId: 'G-GZS334P7B8'
+    },
+    services: {
+      database: true,
+      analytics: true
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

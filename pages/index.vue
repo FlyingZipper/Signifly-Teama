@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div />
-    <v-layout-card-project />
+    <v-layout-card-project :projects="projects" />
     <div />
     <v-button-create />
   </div>
@@ -18,8 +18,24 @@ export default {
   },
   data () {
     return {
-      text: ''
+      projects: {},
+      loading: true
     }
+  },
+  created () {
+    this.$getTeams()
+      .then((response) => {
+        if (response.exists()) {
+          this.projects = response.val()
+        } else {
+          this.project = {}
+        }
+        this.loading = false
+      })
+      .catch(() => {
+        this.loading = false
+        this.project = {}
+      })
   }
 }
 </script>

@@ -1,21 +1,17 @@
 <template>
-  <nuxt-link class="card-project" to="/kekw">
+  <nuxt-link class="card-project" :to="`/${slug}`">
     <div class="card-project__project">
-      <v-header small title="Project Name" />
+      <v-header small :title="project.project.project" />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id
-        consequat libero, at viverra magna. Nullam suscipit, mi eget venenatis
-        porttitor, risus elit cursus ex, vitae pulvinar felis nulla a lectus.
+        {{ project.project.description }}
       </p>
     </div>
     <div class="card-project__client">
-      <span><b>For</b> : Google</span>
-      <span><b>Email</b> : Google@support.com</span>
-      <span><b>Team Size</b> : 5</span>
+      <span class="capitalize"><b>Client:</b> {{ project.client.name }}</span>
+      <span><b>Email:</b> {{ project.client.email }}</span>
+      <span><b>Team Size:</b> {{ project.members.length }}</span>
     </div>
-    <span
-      class="material-icons-outlined card-project__arrow"
-    >east</span>
+    <span class="material-icons-outlined card-project__arrow">east</span>
   </nuxt-link>
 </template>
 
@@ -25,6 +21,16 @@ import Header from '~/components/molecules/Header.vue'
 export default {
   components: {
     'v-header': Header
+  },
+  props: {
+    project: {
+      type: Object,
+      required: true
+    },
+    slug: {
+      type: String,
+      required: true
+    }
   }
 }
 </script>

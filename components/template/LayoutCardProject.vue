@@ -1,7 +1,13 @@
 <template>
   <div class="card-layout">
     <div class="card-layout__grid">
-      <v-card-project v-for="i in 10" :key="i" />
+      <v-card-project
+        v-for="(project, slug) in projects"
+        :key="slug"
+        :slug="slug"
+        :project="project"
+      />
+      <div />
     </div>
   </div>
 </template>
@@ -12,6 +18,12 @@ import CardProject from '~/components/molecules/CardProject.vue'
 export default {
   components: {
     'v-card-project': CardProject
+  },
+  props: {
+    projects: {
+      type: Object,
+      required: true
+    }
   }
 }
 </script>
@@ -20,12 +32,12 @@ export default {
 .card-layout {
   margin-top: 135px;
   margin-bottom: 100px;
-  & .card-layout__grid{
-  margin: 0 5%;
-  display: grid;
-  grid-template-columns: 20rem 20rem 20rem 20rem;
-  grid-row-gap: 40px;
-  grid-column-gap: 40px;
+  & .card-layout__grid {
+    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
   }
 }
 </style>

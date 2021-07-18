@@ -71,10 +71,9 @@ export default {
       this.step++
     },
     save () {
-      // TODO : save information on firebase storage
-      // console.log(this.data)
-      // on success push route to _slug with the corresponding slug
-      this.$router.push({ path: '/fesfs' })
+      this.$createTeam(this.form).then((response) => {
+        this.$router.push({ path: '/fesfs' })
+      })
     }
   }
 }

@@ -1,30 +1,31 @@
 <template>
   <div class="layout">
     <div />
-    <div class="content_layout">
-      <v-header title="Individual Project" />
+    <div v-if="project !== null" class="content_layout">
+      <v-header :title="project.project.project" />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id
-        consequat libero, at viverra magna. Nullam suscipit, mi eget venenatis
-        porttitor, risus elit cursus ex, vitae pulvinar felis nulla a lectus.
+        {{ project.project.description }}
       </p>
       <div>
         <h3>Client Information</h3>
         <div>
-          <h4>Name</h4>
-          <div>Client name</div>
+          <h4>Client</h4>
+          <div>{{ project.client.name }}</div>
         </div>
         <div>
           <h4>Email</h4>
-          <div>Client email</div>
+          <div>{{ project.client.email }}</div>
         </div>
       </div>
       <div>
         <h3>Team members</h3>
-        <div>
-          Team member cards
+        <div v-for="member in project.members" :key="member.email">
+          {{ member.email }}
         </div>
       </div>
+    </div>
+    <div v-else>
+      No team found for this project
     </div>
     <div />
   </div>
@@ -36,6 +37,27 @@ import Header from '~/components/molecules/Header.vue'
 export default {
   components: {
     'v-header': Header
+  },
+  data () {
+    return {
+      project: null,
+      loading: true
+    }
+  },
+  created () {
+    this.$getTeam(this.$route.params.slug)
+      .then((response) => {
+        if (response.exists()) {
+          this.project = response.val()
+        } else {
+          this.project = null
+        }
+        this.loading = false
+      })
+      .catch(() => {
+        this.loading = false
+        this.project = null
+      })
   }
 }
 </script>

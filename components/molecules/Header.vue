@@ -31,6 +31,7 @@ export default {
   font-weight: 600;
   & > h3 {
     font-size: 1.5rem;
+    text-transform: capitalize;
     &.small {
       font-size: 1.15rem;
     }

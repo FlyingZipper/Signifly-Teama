@@ -36,9 +36,6 @@ export default {
       }
       return 'Project'
     }
-  },
-  created () {
-    console.log(this.$route.path)
   }
 }
 </script>
