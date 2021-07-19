@@ -68,6 +68,10 @@ export default {
   border: 1px solid;
   border-color: #ffffff;
   padding: 0.5em 1em;
+  padding-left: 0;
+  @include desktop {
+      padding-left: 1em;
+  }
   cursor: pointer;
   &:hover {
     box-shadow: 8px 8px 0 #000;

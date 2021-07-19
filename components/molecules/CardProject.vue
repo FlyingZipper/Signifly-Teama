@@ -30,12 +30,6 @@ export default {
       type: String,
       required: true
     }
-  },
-  // components: {
-  //   'v-header': Header
-  // },
-  created () {
-    console.log(this.project)
   }
 }
 </script>

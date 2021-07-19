@@ -81,20 +81,23 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/scss/var.scss";
 
-.overview{
-  h4{
+.overview {
+  h4 {
     font-weight: 500;
   }
-  & .overview__subtitlte{
+  & .overview__subtitlte {
     text-transform: uppercase;
   }
   & .overview__members {
     display: grid;
-    grid-template-columns: $card-size $card-size $card-size $card-size;
+    grid-template-columns: 1fr;
+    @include desktop {
+      grid-template-columns: $card-size $card-size $card-size $card-size;
+    }
     grid-row-gap: 40px;
     grid-column-gap: 40px;
   }
-  & .project__section{
+  & .project__section {
     margin: 50px 0;
   }
 }

@@ -39,7 +39,7 @@ li {
     max-width: 1000px;
   }
   & > * {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     &:last-child {
       margin-bottom: 0px;
     }
@@ -52,9 +52,17 @@ li {
 
 .layout {
   display: grid;
-  grid-template-columns: 15% auto 15%;
+  grid-template-columns: 1fr;
+  @include desktop{
+    grid-template-columns: 15% auto 15%;
+  }
   & > #main {
-    margin-top: $top-spacing;
+    margin: 0 50px;
+    margin-top: 30px;
+    overflow: scroll;
+    @include desktop{
+      margin-top: $top-spacing;
+    }
     margin-bottom: 50px;
   }
 }
