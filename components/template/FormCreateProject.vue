@@ -71,7 +71,7 @@ export default {
     },
     save () {
       this.$createTeam(this.form).then((response) => {
-        this.$router.push({ path: '/fesfs' })
+        this.$router.push({ path: '/' })
       })
     }
   }

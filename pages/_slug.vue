@@ -15,7 +15,7 @@
             </div>
             <div>
               <h4>Email</h4>
-              <div>{{ project.client.email }}</div>
+              <a class="mailto" href="mailto:">{{ project.client.email }}</a>
             </div>
           </div>
         </div>
@@ -52,6 +52,11 @@ export default {
     return {
       project: null,
       loading: true
+    }
+  },
+  computed: {
+    mailto () {
+      return `mailto:${this.project.client.email}`
     }
   },
   created () {

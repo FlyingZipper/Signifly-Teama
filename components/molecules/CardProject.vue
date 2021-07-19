@@ -41,12 +41,10 @@ export default {
 @import "~/assets/scss/var.scss";
 
 .card-project {
-  h2 {
-  }
   position: relative;
   color: #fff;
   widows: 100%;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   background-color: $main;
