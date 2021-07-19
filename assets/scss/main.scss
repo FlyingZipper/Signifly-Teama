@@ -98,5 +98,8 @@ a.mailto {
 
 h1{
   text-transform: uppercase;
-  font-size: 70px
+  font-size: 50px;
+  @include desktop{
+    font-size: 70px
+  }
 }

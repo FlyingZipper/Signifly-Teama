@@ -1,6 +1,6 @@
 <template>
   <div class="layout-project">
-    <div v-if="project !== {}" class="layout-project__grid">
+    <div v-if="projects !== {}" class="layout-project__grid">
       <v-card-project
         v-for="(project, slug) in projects"
         :key="slug"

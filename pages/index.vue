@@ -24,16 +24,17 @@ export default {
   created () {
     this.$getTeams()
       .then((response) => {
+        console.log(response)
         if (response.exists()) {
           this.projects = response.val()
         } else {
-          this.project = {}
+          this.projects = {}
         }
         this.loading = false
       })
       .catch(() => {
         this.loading = false
-        this.project = {}
+        this.projects = {}
       })
   }
 }
