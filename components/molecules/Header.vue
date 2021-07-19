@@ -38,7 +38,6 @@ export default {
     }
   }
   & > .step-form-title__indicator {
-    z-index: -1;
     width: 250px;
     height: 15px;
     background-color: $main;

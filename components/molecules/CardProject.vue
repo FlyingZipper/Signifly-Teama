@@ -1,7 +1,9 @@
 <template>
   <nuxt-link class="card-project" :to="`/${slug}`">
     <div class="card-project__project">
-      <v-header small :title="project.project.project" />
+      <h2 class="margin-y-0 capitalize">
+        {{ project.project.project }}
+      </h2>
       <p>
         {{ project.project.description }}
       </p>
@@ -16,12 +18,12 @@
 </template>
 
 <script>
-import Header from '~/components/molecules/Header.vue'
+// import Header from '~/components/molecules/Header.vue'
 
 export default {
-  components: {
-    'v-header': Header
-  },
+  // components: {
+  //   'v-header': Header
+  // },
   props: {
     project: {
       type: Object,
@@ -39,12 +41,15 @@ export default {
 @import "~/assets/scss/var.scss";
 
 .card-project {
+  h2 {
+  }
   position: relative;
-  color: $black;
+  color: #fff;
   widows: 100%;
   padding: 10px;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
+  background-color: $main;
 
   &:hover {
     border-color: #f0f0f0;
