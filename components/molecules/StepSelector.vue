@@ -67,7 +67,7 @@ $font-size: 15px;
     transition: all ease-in-out 0.1s;
     width: 150px;
     height: 15px;
-    background-color: $purple;
+    background-color: $main;
     position: absolute;
     bottom: -5px;
     margin-top: 30px;

@@ -14,7 +14,7 @@ export default {}
   transition: all 0.2s ease-in-out;
   color: #ffffff;
   padding: 15px;
-  background-color: $purple;
+  background-color: $main;
   border-radius: 100%;
   position: fixed;
   bottom: 5%;

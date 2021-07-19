@@ -31,6 +31,7 @@ export default {
   font-weight: 600;
   & > h3 {
     font-size: 1.5rem;
+    margin: 0;
     text-transform: capitalize;
     &.small {
       font-size: 1.15rem;
@@ -40,7 +41,7 @@ export default {
     z-index: -1;
     width: 250px;
     height: 15px;
-    background-color: $purple;
+    background-color: $main;
     position: absolute;
     bottom: -2px;
     margin-top: 30px;

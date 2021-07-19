@@ -22,7 +22,7 @@ export default {
 .button__form{
   transition: all 0.2s ease-in-out;
   text-transform: capitalize;
-  background-color: $purple;
+  background-color: $main;
   font-weight: 600;
   color: #FFFFFF;
   font-size: 1rem;

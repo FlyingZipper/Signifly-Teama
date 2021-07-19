@@ -1,8 +1,6 @@
 <template>
-  <div class="layout">
-    <div />
+  <div>
     <v-layout-card-project :projects="projects" />
-    <div />
     <v-button-create />
   </div>
 </template>

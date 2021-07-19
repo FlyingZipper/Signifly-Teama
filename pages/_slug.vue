@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div>
     <div />
     <div v-if="project !== null" class="content_layout">
       <v-header :title="project.project.project" />
@@ -63,9 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content_layout {
-  margin-right: 100px !important;
-  margin-top: 135px !important;
-  margin-bottom: 100px;
-}
+// .content_layout {
+
+// }
 </style>
