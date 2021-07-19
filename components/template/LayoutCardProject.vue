@@ -32,9 +32,8 @@ export default {
 .layout-project {
   margin-bottom: 100px;
   & .layout-project__grid {
-    margin: 0 5%;
     display: grid;
-    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 40px;
     grid-column-gap: 40px;
   }

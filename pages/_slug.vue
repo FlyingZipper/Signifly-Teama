@@ -1,26 +1,34 @@
 <template>
   <div>
-    <div />
-    <div v-if="project !== null" class="content_layout">
+    <div v-if="project !== null" class="project">
       <v-header :title="project.project.project" />
       <p>
         {{ project.project.description }}
       </p>
-      <div>
-        <h3>Client Information</h3>
+      <div class="project__section">
         <div>
-          <h4>Client</h4>
-          <div>{{ project.client.name }}</div>
+          <h3>Client Information</h3>
+          <div class="project__information">
+            <div>
+              <h4>Client</h4>
+              <div>{{ project.client.name }}</div>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <div>{{ project.client.email }}</div>
+            </div>
+          </div>
         </div>
         <div>
-          <h4>Email</h4>
-          <div>{{ project.client.email }}</div>
-        </div>
-      </div>
-      <div>
-        <h3>Team members</h3>
-        <div v-for="member in project.members" :key="member.email">
-          {{ member.email }}
+          <h3>Team members</h3>
+          <div class="project__members">
+            <v-card-member-form
+              v-for="member in project.members"
+              :key="member.email"
+              :name="member.name"
+              :email="member.email"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -33,10 +41,12 @@
 
 <script>
 import Header from '~/components/molecules/Header.vue'
+import CardMemberForm from '~/components/molecules/CardMemberForm.vue'
 
 export default {
   components: {
-    'v-header': Header
+    'v-header': Header,
+    'v-card-member-form': CardMemberForm
   },
   data () {
     return {
@@ -63,7 +73,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// .content_layout {
-
-// }
+.project {
+  & .project__section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    // & .project__information {
+    //   display: grid;
+    //   grid-template-columns: 1fr 1fr;
+    // }
+    & .project__members {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 40px;
+      grid-column-gap: 40px;
+    }
+  }
+}
 </style>

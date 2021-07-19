@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Projects</h1>
     <v-layout-card-project :projects="projects" />
     <v-button-create />
   </div>
@@ -38,7 +39,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+h1{
+  margin: 0;
+  margin-bottom: 30px;
+}
 /* .layout{
   margin: 0 5%;
   display: grid;
