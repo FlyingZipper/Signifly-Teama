@@ -1,302 +1,362 @@
 [
   {
-    "name": "PATRICK RØNNING",
-    "email": "plr@signifly.com",
-    "role": "CONSULTANTS"
+      "name": "PATRICK RØNNING",
+      "email": "plr@signifly.com",
+      "role": "CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1545302732-plr-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "Mads Kjærgaard",
-    "email": "mk@signifly.com",
-    "role": "CONSULTANTS"
+      "name": "Mads Kjærgaard",
+      "email": "mk@signifly.com",
+      "role": "CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1545302592-mk-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "Nicklas Rønning",
-    "email": "nr@signifly.com",
-    "role": "CONSULTANTS"
+      "name": "Nicklas RØnning",
+      "email": "nr@signifly.com",
+      "role": "CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1545302667-nlr-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "John Mongeau",
-    "email": "jm@signifly.com",
-    "role": "CONSULTANTS"
+      "name": "John Mongeau",
+      "email": "jm@signifly.com",
+      "role": "CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1614352262-signiflyheadshots-28-edit-2-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "Hans Theisen",
-    "email": "ht@signifly.com",
-    "role": "CONSULTANTS"
+      "name": "Hans Theisen",
+      "email": "ht@signifly.com",
+      "role": "CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1622117881-ntk3932-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "Charlie Cross",
-    "email": "cc@signifly.com",
-    "role": "CONSULTANTS"
+      "name": "Charlie Cross",
+      "email": "cc@signifly.com",
+      "role": "CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1591278968-employee-coming-soom.png?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "HEDVIG AANESEN",
-    "email": "ha@signifly.com",
-    "role": "INNOVATION LEADS"
+      "name": "HEDVIG AANESEN",
+      "email": "ha@signifly.com",
+      "role": "INNOVATION LEADS",
+      "image": "https://www.datocms-assets.com/7718/1562334980-ntk2870-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "SARA FRIIS BACHE",
-    "email": "sb@signifly.com",
-    "role": "INNOVATION LEADS"
+      "name": "SARA FRIIS BACHE",
+      "email": "sb@signifly.com",
+      "role": "INNOVATION LEADS",
+      "image": "https://www.datocms-assets.com/7718/1597744462-ntk9134-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MATHILDE LUNDGREEN",
-    "email": "mlu@signifly.com",
-    "role": "INNOVATION LEADS"
+      "name": "MATHILDE LUNDGREEN",
+      "email": "mlu@signifly.com",
+      "role": "INNOVATION LEADS",
+      "image": "https://www.datocms-assets.com/7718/1583233176-ntk0182-edit2.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MATHILDE IVE",
-    "email": "mi@signifly.com",
-    "role": "INNOVATION LEADS"
+      "name": "MATHILDE IVE",
+      "email": "mi@signifly.com",
+      "role": "INNOVATION LEADS",
+      "image": "https://www.datocms-assets.com/7718/1622118104-ntk2599-2-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "GIJS MILLENAAR",
-    "email": "gm@signifly.com",
-    "role": "INNOVATION LEADS"
+      "name": "GIJS MILLENAAR",
+      "email": "gm@signifly.com",
+      "role": "INNOVATION LEADS",
+      "image": "https://www.datocms-assets.com/7718/1622117746-ntk2394-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "EMIL HØRLYCK",
-    "email": "eh@signifly.com",
-    "role": "INNOVATION LEADS"
+      "name": "EMIL HØRLYCK",
+      "email": "eh@signifly.com",
+      "role": "INNOVATION LEADS",
+      "image": "https://www.datocms-assets.com/7718/1622118361-ntk3832-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "AURELIE SAÏZ",
-    "email": "asa@signifly.com",
-    "role": "INNOVATION LEADS"
+      "name": "AURELIE SAÏZ",
+      "email": "asa@signifly.com",
+      "role": "INNOVATION LEADS",
+      "image": "https://www.datocms-assets.com/7718/1591290146-employee-coming-soom.png?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MALTHE MOGENSEN",
-    "email": "mm@signifly.com",
-    "role": "STRATEGISTS"
+      "name": "MALTHE MOGENSEN",
+      "email": "mm@signifly.com",
+      "role": "STRATEGISTS",
+      "image": "https://www.datocms-assets.com/7718/1558702492-mm.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MADS LINDUM",
-    "email": "ml@signifly.com",
-    "role": "STRATEGISTS"
+      "name": "MADS LINDUM",
+      "email": "ml@signifly.com",
+      "role": "STRATEGISTS",
+      "image": "https://www.datocms-assets.com/7718/1553180777-ntk9864-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MICHAEL VALENTIN",
-    "email": "mv@signifly.com",
-    "role": "STRATEGISTS"
+      "name": "MICHAEL VALENTIN",
+      "email": "mv@signifly.com",
+      "role": "STRATEGISTS",
+      "image": "https://www.datocms-assets.com/7718/1545302645-mv-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "GABRIELLE OLIVAS",
-    "email": "go@signifly.com",
-    "role": "STRATEGISTS"
+      "name": "GABRIELLE OLIVAS",
+      "email": "go@signifly.com",
+      "role": "STRATEGISTS",
+      "image": "https://www.datocms-assets.com/7718/1622117422-ntk3727-edit-copy2-1.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "KATHRINE ELVIRA BOYSEN",
-    "email": "keb@signifly.com",
-    "role": "STRATEGISTS"
+      "name": "KATHRINE ELVIRA BOYSEN",
+      "email": "keb@signifly.com",
+      "role": "STRATEGISTS",
+      "image": "https://www.datocms-assets.com/7718/1597744414-ntk9944-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "ZIAD SOLIMAN",
-    "email": "zs@signifly.com",
-    "role": "STRATEGISTS"
+      "name": "ZIAD SOLIMAN",
+      "email": "zs@signifly.com",
+      "role": "STRATEGISTS",
+      "image": "https://www.datocms-assets.com/7718/1614352193-signiflyheadshots-8-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "THOR TOPHØJ",
-    "email": "tt@signifly.com",
-    "role": "GROWTH CONSULTANTS"
+      "name": "THOR TOPHØJ",
+      "email": "tt@signifly.com",
+      "role": "GROWTH CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1624628623-ntk7360.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "TOBIAS JØRGENSEN",
-    "email": "tk@signifly.com",
-    "role": "GROWTH CONSULTANTS"
+      "name": "TOBIAS JØRGENSEN",
+      "email": "tk@signifly.com",
+      "role": "GROWTH CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1599465170-ebl3908-editsmall2.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "CHRISTIAN PIND",
-    "email": "cp@signifly.com",
-    "role": "GROWTH CONSULTANTS"
+      "name": "CHRISTIAN PIND",
+      "email": "cp@signifly.com",
+      "role": "GROWTH CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1622117106-ntk2032-2-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "NADIA WILLUM",
-    "email": "nw@signifly.com",
-    "role": "GROWTH CONSULTANTS"
+      "name": "NADIA WILLUM",
+      "email": "nw@signifly.com",
+      "role": "GROWTH CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1622118295-ntk1975-copy-1.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "ZIAD SOLIMAN",
-    "email": "zs@signifly.com",
-    "role": "GROWTH CONSULTANTS"
+      "name": "ZIAD SOLIMAN",
+      "email": "zs@signifly.com",
+      "role": "GROWTH CONSULTANTS",
+      "image": "https://www.datocms-assets.com/7718/1614352193-signiflyheadshots-8-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "ALEXANDER SPLIID",
-    "email": "as@signifly.com",
-    "role": "DESIGNERS"
+      "name": "ALEXANDER SPLIID",
+      "email": "as@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1545301854-as-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "SØREN SCHRØDER",
-    "email": "ss@signifly.com",
-    "role": "DESIGNERS"
+      "name": "SØREN SCHRØDER",
+      "email": "ss@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1545295667-ss-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "ALEXANDRE LEE",
-    "email": "al@signifly.com",
-    "role": "DESIGNERS"
+      "name": "ALEXANDRE LEE",
+      "email": "al@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1566309819-ntk5930-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "TRINE RØNSHOLDT",
-    "email": "tr@signifly.com",
-    "role": "DESIGNERS"
+      "name": "TRINE RØNSHOLDT",
+      "email": "tr@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1545302800-tr-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MARTIN BALLE",
-    "email": "mba@signifly.com",
-    "role": "DESIGNERS"
+      "name": "MARTIN BALLE",
+      "email": "mba@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1545302399-mb-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "KRISTOFFER BALZER NIELSEN",
-    "email": "kbn@signifly.com",
-    "role": "DESIGNERS"
+      "name": "KRISTOFFER BALZER NIELSEN",
+      "email": "kbn@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1573214896-ntk1519-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "SASHA NG",
-    "email": "sng@signifly.com",
-    "role": "DESIGNERS"
+      "name": "SASHA NG",
+      "email": "sng@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1614633777-signiflyheadshots-41-edit-3.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MAHENDRA CANAGUY",
-    "email": "mnc@signifly.com",
-    "role": "DESIGNERS"
+      "name": "MAHENDRA CANAGUY",
+      "email": "mnc@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1614352296-signiflyheadshots-12-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "CAROLINE VESTERGAARD REITER",
-    "email": "cvr@signifly.com",
-    "role": "DESIGNERS"
+      "name": "CAROLINE VESTERGAARD REITER",
+      "email": "cvr@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1622115771-ntk2686-copy-1.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "CLÉMENT BARJON",
-    "email": "cb@signifly.com",
-    "role": "DESIGNERS"
+      "name": "CLÉMENT BARJON",
+      "email": "cb@signifly.com",
+      "role": "DESIGNERS",
+      "image": "https://www.datocms-assets.com/7718/1591290146-employee-coming-soom.png?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "TORE HEIMANN",
-    "email": "th@signifly.com",
-    "role": "TECH"
+      "name": "TORE HEIMANN",
+      "email": "th@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1545302775-th-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MORTEN JENSEN",
-    "email": "mpj@signifly.com",
-    "role": "TECH"
+      "name": "MORTEN JENSEN",
+      "email": "mpj@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1545309354-mpj-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "RO KLEINE SONNE",
-    "email": "ro@signifly.com",
-    "role": "TECH"
+      "name": "RO KLEINE SONNE",
+      "email": "ro@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1553180647-ntk9290-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "JAJA TRYTOVA",
-    "email": "ja@signifly.com",
-    "role": "TECH"
+      "name": "JAJA TRYTOVA",
+      "email": "ja@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1553180542-ntk9148-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "PHILLIP RAFFNSØE",
-    "email": "pra@signifly.com",
-    "role": "TECH"
+      "name": "PHILLIP RAFFNSØE",
+      "email": "pra@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1597744675-ebl3971-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MATTHIAS S. LARSEN",
-    "email": "msl@signifly.com",
-    "role": "TECH"
+      "name": "MATTHIAS S. LARSEN",
+      "email": "msl@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1583239524-ntk8175-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "DORA BESIC",
-    "email": "db@signifly.com",
-    "role": "TECH"
+      "name": "DORA BESIC",
+      "email": "db@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1622041096-ntk9801-edit.png?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "CHRISTOFFER SKYTTE WIELSØE",
-    "email": "csw@signifly.com",
-    "role": "TECH"
+      "name": "CHRISTOFFER SKYTTE WIELSØE",
+      "email": "csw@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1599465933-ntk9634-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "EWA UTRACKA",
-    "email": "ewa@signifly.com",
-    "role": "TECH"
+      "name": "EWA UTRACKA",
+      "email": "ewa@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1622117332-ntk1854-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "TOMMY JEPSEN",
-    "email": "tje@signifly.com",
-    "role": "TECH"
+      "name": "TOMMY JEPSEN",
+      "email": "tje@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1622192523-ntk3570-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "ANTONI ANDRÉ",
-    "email": "aan@signifly.com",
-    "role": "TECH"
+      "name": "ANTONI ANDRÉ",
+      "email": "aan@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1591300420-employee-coming-soom.png?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "PEDRO PADRON",
-    "email": "pp@signifly.com",
-    "role": "TECH"
+      "name": "PEDRO PADRON",
+      "email": "pp@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1614352357-signiflyheadshots-25-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "HUGO MIRANDA",
-    "email": "hm@signifly.com",
-    "role": "TECH"
+      "name": "HUGO MIRANDA",
+      "email": "hm@signifly.com",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1591290146-employee-coming-soom.png?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "HELENE TRAN",
-    "email": "",
-    "role": "TECH"
+      "name": "HELENE TRAN",
+      "email": "",
+      "role": "TECH",
+      "image": "https://www.datocms-assets.com/7718/1591290146-employee-coming-soom.png?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "NANA SKAK",
-    "email": "ns@signifly.com",
-    "role": "CREATIVES"
+      "name": "NANA SKAK",
+      "email": "ns@signifly.com",
+      "role": "CREATIVES",
+      "image": "https://www.datocms-assets.com/7718/1545302684-ns-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "NIKOLAJ TRANE",
-    "email": "ntk@signifly.com",
-    "role": "CREATIVES"
+      "name": "NIKOLAJ TRANE",
+      "email": "ntk@signifly.com",
+      "role": "CREATIVES",
+      "image": "https://www.datocms-assets.com/7718/1545302706-ntk-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "JOACHIM KLINTFÄLT",
-    "email": "jk@signifly.com",
-    "role": "CREATIVES"
+      "name": "JOACHIM KLINTFÄLT",
+      "email": "jk@signifly.com",
+      "role": "CREATIVES",
+      "image": "https://www.datocms-assets.com/7718/1622117957-ntk2194-copy-1.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "CHRISTIAN WIENBERG",
-    "email": "cw@signifly.com",
-    "role": "CREATIVES"
+      "name": "CHRISTIAN WIENBERG",
+      "email": "cw@signifly.com",
+      "role": "CREATIVES",
+      "image": "https://www.datocms-assets.com/7718/1622117219-ntk2281-copy-1.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "ANDERS LINDVED",
-    "email": "ali@signifly.com",
-    "role": "CREATIVES"
+      "name": "ANDERS LINDVED",
+      "email": "ali@signifly.com",
+      "role": "CREATIVES",
+      "image": "https://www.datocms-assets.com/7718/1622116959-ntk2845-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MIKI MIKUCKI",
-    "email": "mik@signifly.com",
-    "role": "CREATIVES"
+      "name": "MIKI MIKUCKI",
+      "email": "mik@signifly.com",
+      "role": "CREATIVES",
+      "image": "https://www.datocms-assets.com/7718/1622118204-ntk2984-v-2-copy-1.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "LASSE SVANHOLM",
-    "email": "ls@signifly.com",
-    "role": "ADMINISTRATION"
+      "name": "LASSE SVANHOLM",
+      "email": "ls@signifly.com",
+      "role": "ADMINISTRATION",
+      "image": "https://www.datocms-assets.com/7718/1545302317-ls-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MICHAEL VALENTIN",
-    "email": "mv@signifly.com",
-    "role": "ADMINISTRATION"
+      "name": "MICHAEL VALENTIN",
+      "email": "mv@signifly.com",
+      "role": "ADMINISTRATION",
+      "image": "https://www.datocms-assets.com/7718/1545302645-mv-main.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "SARA FRIIS BACHE",
-    "email": "sb@signifly.com",
-    "role": "ADMINISTRATION"
+      "name": "SARA FRIIS BACHE",
+      "email": "sb@signifly.com",
+      "role": "ADMINISTRATION",
+      "image": "https://www.datocms-assets.com/7718/1597744462-ntk9134-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "MARIA OLSEN",
-    "email": "mo@signifly.com",
-    "role": "ADMINISTRATION"
+      "name": "MARIA OLSEN",
+      "email": "mo@signifly.com",
+      "role": "ADMINISTRATION",
+      "image": "https://www.datocms-assets.com/7718/1597744938-ntk9358-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "JOHAN HYGUM HILLERS",
-    "email": "jh@signifly.com",
-    "role": "ADMINISTRATION"
+      "name": "JOHAN HYGUM HILLERS",
+      "email": "jh@signifly.com",
+      "role": "ADMINISTRATION",
+      "image": "https://www.datocms-assets.com/7718/1622118033-ntk1687-3-copy.jpg?auto=compress&w=389&dpr=1&q=70"
   },
   {
-    "name": "AMALIE PFLUG",
-    "email": "ap@signifly.com",
-    "role": "ADMINISTRATION"
+      "name": "AMALIE PFLUG",
+      "email": "ap@signifly.com",
+      "role": "ADMINISTRATION",
+      "image": "https://www.datocms-assets.com/7718/1597744848-ntk9475-edit.jpg?auto=compress&w=389&dpr=1&q=70"
   }
 ]

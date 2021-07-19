@@ -17,26 +17,50 @@ driver.get('https://signifly.com/team/')
 URL = 'https://signifly.com/team/'
 CARD_XPATH = '//div[contains(@class,"swiper-slide")]'
 
+CARD_NAME = './/div[contains(@class,"name")]'
+CARD_TITLE = './/div[contains(@class,"jobtitle")]'
+CARD_IMAGE = './/div[contains(@class,"image")]/img[2]/@src'
 
 def get_cards():
-    return find_element(CARD_XPATH)
+    return driver.find_elements_by_xpath(CARD_XPATH)
 
 
 def find_element(xpath):
     return WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, xpath)))
 
+def find_elements(xpath):
+    return WebDriverWait(driver, 10).until(EC.visibility_of_all_elements_located((By.XPATH, xpath)))
+
+def click_button(id):
+    element = find_element('//*[@id="__layout"]/div/div[1]/div/div[3]/div/div/div/div[{}]/div[3]/div/div/div/div/div[3]'.format(id))
+    element.click()
+    return element
+
 
 def get_image_link(xpath):
     return find_element(xpath).get_attribute('src')
 
+def parse_card(card):
+    try:
+        return {
+            'name' : card.find_element_by_class_name("name").text,
+            'title' : card.find_element_by_class_name("jobtitle").text,
+            'image': card.find_element_by_class_name('img').get_attribute('src'),
+
+        }
+    except:
+        return {}
+
+def parse_cards(cards):
+    kek = []
+    for card in cards:
+        kek.append(parse_card(card))
+        time.sleep(0.1)
+    return kek
 
 def scroll_to_bottom():
-    # document.documentElement.scrollHeight
-    # document.documentElement.scrollTop + document.documentElement.clientHeight
-    def check_if_bottom():
-        return driver.execute_script('document.documentElement.scrollTop + document.documentElement.clientHeight')
 
-    SCROLL_PAUSE_TIME = 2  # wait 2 seconds
+    SCROLL_PAUSE_TIME = 0.25  # wait 1 seconds
     while True:
         # Scroll down by 300px
         driver.execute_script("window.scrollBy(0, 300);")
@@ -44,80 +68,24 @@ def scroll_to_bottom():
         # Wait to load page
         time.sleep(SCROLL_PAUSE_TIME)
 
-        # Calculate new scroll height and compare with last scroll height
-        if check_if_bottom:
+        #check if at the bottom of the page
+        if driver.execute_script('return document.documentElement.scrollTop + document.documentElement.clientHeight === document.documentElement.scrollHeight'):
             break
-
-
-def fill_input(value, xpath):
-    element = find_element(xpath)
-    element.clear()
-    element.send_keys(value)
-    return element
-
-
-def get_text_tag(xpath):
-    return find_element(xpath).text
-
-
-def click_button(xpath):
-    element = find_element(xpath)
-    element.click()
-    return element
-
-
-def navigate_to(full_path="", query=""):
-    if(query == ""):
-        driver.get(full_path)
-    else:
-        driver.get("{}{}/".format(URL, query))
-
-
-def scrap_profile_posts(profile):
-    navigate_to(query=profile)
-    links = scroll_to_bottom()
-    return links
-
-
-def remove_front_indicators(text):
-    return text[1:].strip()
-
-
-def wait_out(min_time=0.25, max_time=1.25):
-    wait_out_tome: float = min_time + random.random()
-    time.sleep(wait_out_tome) if wait_out_tome < max_time else time.sleep(
-        max_time)
-
-
-def parse_text_arr(arr):
-    return [i for i in [remove_front_indicators(instruction) for instruction in arr] if i != ""]
-
-
-def login_routine():
-
-    CREDENTIALS = {
-        'username': 'patricktrudel48',
-        'password': 'V:25VLMQkMQmJJf'
-    }
-
-    XPATH = {
-        'input_username': '//*[@id="loginForm"]/div/div[1]/div/label/input',
-        'input_password': '//*[@id="loginForm"]/div/div[2]/div/label/input',
-        'button_connection': '//*[@id="loginForm"]/div/div[3]/button',
-        'button_not_now': '//*[@id="react-root"]/section/main/div/div/div/div/button',
-        'button_notifications': '/html/body/div[4]/div/div/div/div[3]/button[2]'
-    }
-
-    fill_input(CREDENTIALS['username'], XPATH['input_username'])
-    fill_input(CREDENTIALS['password'], XPATH['input_password'])
-    click_button(XPATH['button_connection'])
-    click_button(XPATH['button_not_now'])
-    click_button(XPATH['button_notifications'])
 
 
 if __name__ == "__main__":
     scroll_to_bottom()
-    print(len(get_cards()))
+    for i in range(1, 9):
+        for j in range(15):
+            click_button(i)
+
+    time.sleep(5)
+
+    cards = get_cards()
+    cards = parse_cards(cards)
+
+    with open("team.json", "w") as outfile:
+        json.dump(cards, outfile)
     driver.quit()
 
     # login_routine()
