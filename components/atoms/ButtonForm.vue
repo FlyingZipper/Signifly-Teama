@@ -27,7 +27,7 @@ export default {
   color: #FFFFFF;
   font-size: 1rem;
   padding: 0.5em 1em;
-  border-radius: 4px;
+  border-radius: 2px;
   &:hover {
     box-shadow: 4px 4px 0 #000;
     transform: translate(-2px, -2px);

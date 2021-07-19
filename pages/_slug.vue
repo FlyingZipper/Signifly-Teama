@@ -2,7 +2,7 @@
   <div>
     <div v-if="project !== null" class="project">
       <v-header :title="project.project.project" />
-      <p>
+      <p class="project__description">
         {{ project.project.description }}
       </p>
       <div class="project__section">
@@ -79,6 +79,9 @@ export default {
 
 <style lang="scss" scoped>
 .project {
+  & .project__description{
+    max-width: 50%;
+  }
   & .project__section {
     display: grid;
     grid-template-columns: 1fr 4fr;

@@ -45,7 +45,6 @@ export default {
   color: #fff;
   widows: 100%;
   padding: 20px;
-  border-radius: 8px;
   transition: all 0.2s ease-in-out;
   background-color: $main;
 

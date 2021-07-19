@@ -67,7 +67,6 @@ export default {
   flex-shrink: 0;
   border: 1px solid;
   border-color: #ffffff;
-  border-radius: 8px;
   padding: 0.5em 1em;
   cursor: pointer;
   &:hover {
