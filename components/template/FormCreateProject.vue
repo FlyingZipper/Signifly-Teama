@@ -79,24 +79,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~/assets/scss/var.scss';
+@import "~/assets/scss/var.scss";
 
 .form-create-project {
   & > .form-create-project__selector {
-    z-index: 10;
-    background: #ffffffee;
-    position: fixed;
-    top: $top-spacing;
-    left: 50px;
-    & > * {
-      margin-bottom: 50px;
-      &:last-child {
-        margin-bottom: 0px;
+    display: none;
+    @include desktop {
+      display: block;
+      z-index: 10;
+      background: #ffffffee;
+      position: fixed;
+      top: $top-spacing;
+      left: 50px;
+      & > * {
+        margin-bottom: 50px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
       }
     }
   }
   & > .form-create-project__steps {
-    min-height: 100vh;
+    @include desktop {
+      min-height: 100vh;
+    }
   }
 }
 </style>

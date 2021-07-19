@@ -29,11 +29,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/scss/var.scss";
+
 .layout-project {
   margin-bottom: 100px;
   & .layout-project__grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
     grid-row-gap: 40px;
     grid-column-gap: 40px;
   }

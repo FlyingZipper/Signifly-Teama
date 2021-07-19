@@ -7,7 +7,7 @@
     <div
       :class="[
         enabled ? 'material-icons-outlined enabled' : '',
-        'card-member-form__initals',
+        'card-member-form__initials',
       ]"
     >
       {{ initials }}
@@ -77,7 +77,7 @@ export default {
       box-shadow: 8px 8px 0 $main;
     }
   }
-  & > .card-member-form__initals {
+  & > .card-member-form__initials {
     transition: all 0.2s ease-in-out;
     border-radius: 100%;
     color: #fff;
@@ -102,7 +102,10 @@ export default {
       text-transform: capitalize;
       text-align: initial;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.75rem;
+      @include desktop {
+        font-size: 1rem;
+      }
       color: $black;
     }
     & > .card-member-form__email {

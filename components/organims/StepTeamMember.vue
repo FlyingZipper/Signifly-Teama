@@ -8,7 +8,7 @@
           :key="role"
           @click="setActiveRole(role)"
         >
-          <h3 class="team__role" :class="{enabled : role === activeRole}">
+          <h3 class="team__role" :class="{ enabled: role === activeRole }">
             {{ role }}
           </h3>
         </button>
@@ -111,19 +111,24 @@ export default {
       font-size: 1.15rem;
       font-weight: 600;
       color: $gray;
-      &:hover{
+      &:hover {
         color: $black;
       }
-      &.enabled{
+      &.enabled {
         color: $main;
       }
     }
   }
   & .team__members {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 40px;
-    grid-column-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    @include desktop {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 40px;
+      grid-column-gap: 40px;
+    }
 
     // & > .team__member {
 

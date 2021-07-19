@@ -19,6 +19,11 @@ export default {}
   position: fixed;
   bottom: 5%;
   right: 5%;
+  border: 4px solid #FFFFFF;
+  @include desktop {
+    border: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
   &:hover {
     box-shadow: 4px 4px 0 #000;
     transform: translate(-2px, -2px);

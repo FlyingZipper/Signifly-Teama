@@ -77,20 +77,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/scss/var.scss";
+
 .project {
-  & .project__description{
-    max-width: 50%;
+  & .project__description {
+    @include desktop {
+      max-width: 50%;
+    }
   }
   & .project__section {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    // & .project__information {
-    //   display: grid;
-    //   grid-template-columns: 1fr 1fr;
-    // }
+    grid-template-columns: 1fr;
+    @include desktop {
+      grid-template-columns: 1fr 4fr;
+    }
     & .project__members {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      @include desktop {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
       grid-row-gap: 40px;
       grid-column-gap: 40px;
     }
