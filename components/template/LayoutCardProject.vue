@@ -1,6 +1,6 @@
 <template>
-  <div class="card-layout">
-    <div class="card-layout__grid">
+  <div class="layout-project">
+    <div class="layout-project__grid">
       <v-card-project
         v-for="(project, slug) in projects"
         :key="slug"
@@ -29,10 +29,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.card-layout {
-  margin-top: 135px;
+.layout-project {
   margin-bottom: 100px;
-  & .card-layout__grid {
+  & .layout-project__grid {
     margin: 0 5%;
     display: grid;
     grid-template-columns: 20rem 20rem 20rem 20rem;

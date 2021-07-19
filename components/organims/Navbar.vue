@@ -44,8 +44,10 @@ export default {
 @import "~/assets/scss/var.scss";
 
 .navbar {
-  margin: 20px 5%;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  margin-left: 50px;
+  padding-top: 20px;
   & > .navbar__logo {
     display: flex;
     align-items: center;
@@ -54,7 +56,7 @@ export default {
       line-height: 40px;
       font-size: 30px;
       font-weight: 600;
-      color: $purple;
+      color: $main;
       margin: 0;
     }
   }

@@ -75,7 +75,7 @@ export default {
     border: 1px solid #f0f0f0;
     transform: translate(-4px, -4px);
     &.enabled {
-      box-shadow: 8px 8px 0 $purple;
+      box-shadow: 8px 8px 0 $main;
     }
   }
   & > .card-member-form__initals {
@@ -91,17 +91,17 @@ export default {
     margin-right: 10px;
     flex-shrink: 0;
     &.enabled {
-      background-color: $purple;
+      background-color: $main;
     }
   }
   & > .card-member-form__info {
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
     justify-content: center;
     align-items: flex-start;
     & > .card-member-form__name {
       text-transform: capitalize;
+      text-align: initial;
       font-weight: 600;
       font-size: 1rem;
       color: $black;

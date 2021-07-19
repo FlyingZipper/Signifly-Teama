@@ -110,14 +110,18 @@ export default {
       text-transform: uppercase;
       font-size: 1.15rem;
       font-weight: 600;
+      color: $gray;
+      &:hover{
+        color: $black;
+      }
       &.enabled{
-        color: $purple;
+        color: $main;
       }
     }
   }
   & .team__members {
     display: grid;
-    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-row-gap: 40px;
     grid-column-gap: 40px;
 

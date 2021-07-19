@@ -5,12 +5,12 @@
 
 ::selection {
   color: #FFFFFF;
-  background: $purple;
+  background: $main;
 }
 
 ::-moz-selection { /* Code for Firefox */
   color: #FFFFFF;
-  background: $purple;
+  background: $main;
 }
 
 // Layout
@@ -32,6 +32,7 @@ li{
 
 .form-layout{
   min-width: 500px;
+  max-width: 1000px;
   & > * {
     margin-bottom: 50px;
     &:last-child{
@@ -45,34 +46,11 @@ li{
 }
 
 .layout{
-  margin: 0 5%;
   display: grid;
-  grid-template-columns: 10rem auto;
-  & > *:nth-child(1) {
-    margin-top: 135px;
-    margin-bottom: 100px;
+  grid-template-columns: 15% auto 15%;
+  & > #main {
+    margin-top: $top-spacing;
   }
-}
-
-.container{
-  max-width: 80rem;
-  margin: 0 auto;
-}
-
-.center{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.center-x{
-  display: flex;
-  justify-content: center;
-}
-
-.center-y{
-  display: flex;
-  align-items: center;
 }
 
 // Button

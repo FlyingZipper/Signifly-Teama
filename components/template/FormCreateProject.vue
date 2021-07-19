@@ -16,7 +16,6 @@
         :step="4"
       />
     </div>
-    <div /> <!-- Space holder for selector step component -->
     <div class="form-create-project__steps">
       <transition name="slide" mode="out-in">
         <v-step-client-info
@@ -80,15 +79,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/scss/var.scss';
+
 .form-create-project {
-  margin: 0 5%;
-  display: grid;
-  grid-template-columns: 20rem auto 20rem;
   & > .form-create-project__selector {
+    z-index: 10;
+    background: #ffffffee;
     position: fixed;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
+    top: $top-spacing;
+    left: 50px;
     & > * {
       margin-bottom: 50px;
       &:last-child {
@@ -97,12 +96,7 @@ export default {
     }
   }
   & > .form-create-project__steps {
-    // margin-top: 10rem;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5rem;
   }
 }
 </style>

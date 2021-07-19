@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="layout">
     <v-navbar />
     <main id="main">
       <transition
-        name="slide"
+        name="fade"
         mode="out-in"
       >
         <Nuxt />
