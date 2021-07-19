@@ -23,8 +23,8 @@
           <h3>Team members</h3>
           <div class="project__members">
             <v-card-member-display
-              v-for="member in project.members"
-              :key="member.email"
+              v-for="(member, index) in project.members"
+              :key="`${member.email}-${index}`"
               :member="member"
             />
           </div>
@@ -50,7 +50,18 @@ export default {
   data () {
     return {
       project: null,
-      loading: true
+      loading: true,
+      default: {
+        client: {
+          name: 'N/A',
+          email: 'N/A'
+        },
+        project: {
+          project: 'N/A',
+          description: 'N/A'
+        },
+        members: []
+      }
     }
   },
   computed: {
@@ -63,6 +74,12 @@ export default {
       .then((response) => {
         if (response.exists()) {
           this.project = response.val()
+          if (this.project.client === undefined) {
+            this.project.client = this.default.client
+          }
+          if (this.project.project === undefined) {
+            this.project.project = this.default.project
+          }
         } else {
           this.project = null
         }
@@ -87,9 +104,9 @@ export default {
   }
   & .project__section {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     @include desktop {
-      grid-template-columns: 1fr 4fr;
+      grid-template-columns: 1fr 2fr;
     }
     & .project__members {
       display: grid;
@@ -98,7 +115,7 @@ export default {
         grid-template-columns: 1fr 1fr 1fr 1fr;
       }
       grid-row-gap: 40px;
-      grid-column-gap: 40px;
+      grid-column-gap: 10px;
     }
   }
 }

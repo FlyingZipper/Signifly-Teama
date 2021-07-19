@@ -1,6 +1,6 @@
 <template>
   <div class="layout-project">
-    <div class="layout-project__grid">
+    <div v-if="project !== {}" class="layout-project__grid">
       <v-card-project
         v-for="(project, slug) in projects"
         :key="slug"
@@ -8,6 +8,11 @@
         :project="project"
       />
       <div />
+    </div>
+    <div v-else>
+      <h3>
+        No Projects Found
+      </h3>
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dashboard">
     <h1>Projects</h1>
     <v-layout-card-project :projects="projects" />
     <v-button-create />
@@ -40,7 +40,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1{
+@import "~/assets/scss/var.scss";
+
+.dashboard {
+  @include desktop {
+    padding: 0 10px;
+  }
+}
+
+h1 {
   margin: 0;
   margin-bottom: 30px;
 }

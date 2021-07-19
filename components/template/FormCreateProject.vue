@@ -27,13 +27,20 @@
           v-if="step === 2"
           v-model="form.project"
           @nextStep="incrementStep"
+          @prevStep="decrementStep"
         />
         <v-step-team-member
           v-if="step === 3"
           v-model="form.members"
           @nextStep="incrementStep"
+          @prevStep="decrementStep"
         />
-        <v-step-overview v-if="step === 4" :form-data="form" @nextStep="save" />
+        <v-step-overview
+          v-if="step === 4"
+          :form-data="form"
+          @prevStep="decrementStep"
+          @nextStep="save"
+        />
       </transition>
     </div>
   </div>
@@ -68,6 +75,9 @@ export default {
   methods: {
     incrementStep () {
       this.step++
+    },
+    decrementStep () {
+      this.step--
     },
     save () {
       this.$createTeam(this.form).then((response) => {

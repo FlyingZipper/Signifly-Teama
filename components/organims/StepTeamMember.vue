@@ -1,6 +1,6 @@
 <template>
   <div class="team form-layout">
-    <v-header-form title="Team Members" />
+    <v-header-form small title="Team Members" />
     <div class="team__roles">
       <div class="">
         <button
@@ -28,6 +28,7 @@
         </li>
       </ul>
     </div>
+    <v-button name="back" class="hide-desktop" @click.native="prevStep" />
     <v-button-form @click.native="nextStep" />
   </div>
 </template>
@@ -36,12 +37,14 @@
 import CardMemberForm from '~/components/molecules/CardMemberForm.vue'
 import HeaderForm from '~/components/molecules/Header.vue'
 import ButtonForm from '~/components/atoms/ButtonForm.vue'
+import Button from '~/components/atoms/Button.vue'
 import teamMembers from '~/team.json'
 
 export default {
   components: {
     'v-card-member-form': CardMemberForm,
     'v-button-form': ButtonForm,
+    'v-button': Button,
     'v-header-form': HeaderForm
   },
   props: {
@@ -80,6 +83,10 @@ export default {
     nextStep () {
       this.$emit('input', this.value)
       this.$emit('nextStep')
+    },
+    prevStep () {
+      this.$emit('input', this.value)
+      this.$emit('prevStep')
     },
     toggleCard (email) {
       if (this.value.includes(email)) {
@@ -127,7 +134,7 @@ export default {
     @include desktop {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-row-gap: 40px;
-      grid-column-gap: 40px;
+      grid-column-gap: 10px;
     }
 
     // & > .team__member {

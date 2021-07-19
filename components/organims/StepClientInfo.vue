@@ -1,6 +1,6 @@
 <template>
   <div class="form-layout">
-    <v-header-form title="Client Information" />
+    <v-header-form small title="Client Information" />
     <v-input-text v-model="stepform.name" label="Name" name="name" />
     <v-input-text v-model="stepform.email" label="Email" name="email" />
     <v-button-form @click.native="nextStep" />

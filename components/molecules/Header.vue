@@ -30,11 +30,11 @@ export default {
   position: relative;
   font-weight: 600;
   & > h3 {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     margin: 0;
-    text-transform: capitalize;
+    text-transform: uppercase;
     &.small {
-      font-size: 1.15rem;
+      font-size: 2rem;
     }
   }
   & > .step-form-title__indicator {

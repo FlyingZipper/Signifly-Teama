@@ -1,6 +1,6 @@
 <template>
   <div class="overview">
-    <v-header-form title="Project Overview" />
+    <v-header-form small title="Project Overview" />
     <div class="project__section">
       <div>
         <h3>Client Information</h3>
@@ -41,12 +41,14 @@
         </div>
       </div>
     </div>
+    <v-button class="hide-desktop" name="back" @click.native="prevStep" />
     <v-button-form name="Assemble" @click.native="nextStep" />
   </div>
 </template>
 
 <script>
 import ButtonForm from '~/components/atoms/ButtonForm.vue'
+import Button from '~/components/atoms/Button.vue'
 import HeaderForm from '~/components/molecules/Header.vue'
 
 import CardMemberDisplay from '~/components/molecules/CardMemberDisplay.vue'
@@ -56,6 +58,7 @@ import teamMembers from '~/team.json'
 export default {
   components: {
     'v-button-form': ButtonForm,
+    'v-button': Button,
     'v-header-form': HeaderForm,
     'v-card-member-display': CardMemberDisplay
   },
@@ -73,6 +76,9 @@ export default {
   methods: {
     nextStep () {
       this.$emit('nextStep')
+    },
+    prevStep () {
+      this.$emit('prevStep')
     }
   }
 }
