@@ -51,6 +51,7 @@ li {
   grid-template-columns: 15% auto 15%;
   & > #main {
     margin-top: $top-spacing;
+    margin-bottom: 50px;
   }
 }
 

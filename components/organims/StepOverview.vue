@@ -7,7 +7,9 @@
         <div>
           <div>
             <h4>Client</h4>
-            <div>{{ formData.client.name }}</div>
+            <div class="captitalize">
+              {{ formData.client.name }}
+            </div>
           </div>
           <div>
             <h4>Email</h4>
@@ -31,11 +33,10 @@
       <div>
         <h3>Team members</h3>
         <div class="overview__members">
-          <v-card-member-form
+          <v-card-member-display
             v-for="member in members"
             :key="member.email"
-            :name="member.name"
-            :email="member.email"
+            :member="member"
           />
         </div>
       </div>
@@ -48,7 +49,7 @@
 import ButtonForm from '~/components/atoms/ButtonForm.vue'
 import HeaderForm from '~/components/molecules/Header.vue'
 
-import CardMemberForm from '~/components/molecules/CardMemberForm.vue'
+import CardMemberDisplay from '~/components/molecules/CardMemberDisplay.vue'
 
 import teamMembers from '~/team.json'
 
@@ -56,7 +57,7 @@ export default {
   components: {
     'v-button-form': ButtonForm,
     'v-header-form': HeaderForm,
-    'v-card-member-form': CardMemberForm
+    'v-card-member-display': CardMemberDisplay
   },
   props: {
     formData: {
@@ -78,14 +79,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/scss/var.scss";
 
 .overview{
+  h4{
+    font-weight: 500;
+  }
   & .overview__subtitlte{
     text-transform: uppercase;
   }
   & .overview__members {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: $card-size $card-size $card-size $card-size;
     grid-row-gap: 40px;
     grid-column-gap: 40px;
   }

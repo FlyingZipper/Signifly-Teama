@@ -22,11 +22,10 @@
         <div>
           <h3>Team members</h3>
           <div class="project__members">
-            <v-card-member-form
+            <v-card-member-display
               v-for="member in project.members"
               :key="member.email"
-              :name="member.name"
-              :email="member.email"
+              :member="member"
             />
           </div>
         </div>
@@ -41,12 +40,12 @@
 
 <script>
 import Header from '~/components/molecules/Header.vue'
-import CardMemberForm from '~/components/molecules/CardMemberForm.vue'
+import CardMemberDisplay from '~/components/molecules/CardMemberDisplay.vue'
 
 export default {
   components: {
     'v-header': Header,
-    'v-card-member-form': CardMemberForm
+    'v-card-member-display': CardMemberDisplay
   },
   data () {
     return {

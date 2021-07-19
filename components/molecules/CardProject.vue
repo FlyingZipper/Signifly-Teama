@@ -1,6 +1,6 @@
 <template>
   <nuxt-link class="card-project" :to="`/${slug}`">
-    <div class="card-project__project">
+    <div v-if="project.project !== undefined" class="card-project__project">
       <h2 class="margin-y-0 capitalize">
         {{ project.project.project }}
       </h2>
@@ -8,10 +8,10 @@
         {{ project.project.description }}
       </p>
     </div>
-    <div class="card-project__client">
+    <div v-if="project.client !== undefined" class="card-project__client">
       <span class="capitalize"><b>Client:</b> {{ project.client.name }}</span>
       <span><b>Email:</b> {{ project.client.email }}</span>
-      <span><b>Team Size:</b> {{ project.members.length }}</span>
+      <span v-if="project.members !== undefined"><b>Team Size:</b> {{ project.members.length }}</span>
     </div>
     <span class="material-icons-outlined card-project__arrow">east</span>
   </nuxt-link>
@@ -21,9 +21,6 @@
 // import Header from '~/components/molecules/Header.vue'
 
 export default {
-  // components: {
-  //   'v-header': Header
-  // },
   props: {
     project: {
       type: Object,
@@ -33,6 +30,12 @@ export default {
       type: String,
       required: true
     }
+  },
+  // components: {
+  //   'v-header': Header
+  // },
+  created () {
+    console.log(this.project)
   }
 }
 </script>
